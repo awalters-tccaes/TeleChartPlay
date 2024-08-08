@@ -4,3 +4,5 @@
 bin
 obj
 *.cache
+NpmJS/node_modules/*
+NpmJS/node_modules/
