@@ -6,3 +6,5 @@ obj
 *.cache
 NpmJS/node_modules/*
 NpmJS/node_modules/
+*node_modules*
+*/node_modules/*
