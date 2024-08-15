@@ -3,7 +3,16 @@
 
 <PageTitle>GOJS</PageTitle>
 
-<h1>GOJS</h1>
+NETWORK CHART HERE:
+
+<div id="sample">
+    <div style="width: 100%; height: 100%; display: flex; justify-content: space-between">
+        <!-- The DIV for the Diagram needs an explicit size or else we won't see anything.
+           This also adds a border to help see the edges of the viewport. -->
+        <div id="myPaletteDiv" style="width: 100px; margin-right: 2px; border: solid 1px black"></div>
+        <div id="myDiagramDiv" style="border: solid 1px black; flex-grow: 1; height: 450px"></div>
+    </div>
+</div>
 
 <script id="code">
     var modelJson = {
@@ -51,6 +60,8 @@
     var myPalette;
 
     function init() {
+        console.log('GO INITIALIZING');
+
         myDiagram = new go.Diagram('myDiagramDiv', {
             'commandHandler.archetypeGroupData': { isGroup: true, text: 'Subnet' },
             'undoManager.isEnabled': true
@@ -126,30 +137,25 @@
     }
 
     function save() {
-        const json = modelJson;
-        json.innerHTML = myDiagram.model.toJson();
-        myDiagram.isModified = false;
-        if (window.Prism) window.Prism.highlightAll();
+        console.log("SAVING");
     }
 
     function load() {
-        const json = modelJson;
-        myDiagram.model && myDiagram.model = go.Model.fromJson(json);
+        console.log('LOADING');
+        var jsonVar = modelJson;
+        console.log("MyDiagram: " + myDiagram);
+        console.log("jsonVar: " + jsonVar);
+        if (myDiagram && jsonVar) {
+            myDiagram.model = go.Model.fromJson(jsonVar);
+        }
+        else {
+            console.log("Diagram or jsonVar is null");
+        }
     }
 
     window.addEventListener('DOMContentLoaded', init);
     
-    load();
-
 </script>
 
 
 
-NETWORK CHART HERE:
-
-<div style="width: 100%; display: flex; justify-content: space-between">
-    <!-- The DIV for the Diagram needs an explicit size or else we won't see anything.
-       This also adds a border to help see the edges of the viewport. -->
-    <div id="myPaletteDiv" style="width: 100px; margin-right: 2px; border: solid 1px black"></div>
-    <div id="myDiagramDiv" style="border: solid 1px black; flex-grow: 1; height: 450px"></div>
-</div>

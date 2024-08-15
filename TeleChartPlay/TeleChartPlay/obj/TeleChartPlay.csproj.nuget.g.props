@@ -15,6 +15,7 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)telerik.ui.for.blazor\6.0.2\buildTransitive\Telerik.UI.for.Blazor.props" Condition="Exists('$(NuGetPackageRoot)telerik.ui.for.blazor\6.0.2\buildTransitive\Telerik.UI.for.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)plotly.blazor\5.1.1\buildTransitive\Plotly.Blazor.props" Condition="Exists('$(NuGetPackageRoot)plotly.blazor\5.1.1\buildTransitive\Plotly.Blazor.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\Antwone\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\8.0.0</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>

@@ -1,8 +1,6 @@
 ﻿@page "/sigma"
 
 
-
-
 <PageTitle>SIGMA</PageTitle>
 
 <h1>SIGMA</h1>
@@ -12,11 +10,21 @@
 
 <script>
     // Create a graphology graph
-    const graph = new graphology.Graph();
-    graph.addNode("1", { label: "Node 1", x: 0, y: 0, size: 10, color: "blue" });
-    graph.addNode("2", { label: "Node 2", x: 1, y: 1, size: 20, color: "red" });
-    graph.addEdge("1", "2", { size: 5, color: "purple" });
+    var graph2 = new graphology.Graph();
+    graph2.addNode("1", { label: "Antwone 1", x: 0, y: 0, size: 10, color: "blue" });
+    graph2.addNode("2", { label: "Antwone 2", x: 1, y: 1, size: 20, color: "red" });
+    graph2.addNode("3", { label: "Antwone 3", x: 2, y: 2, size: 10, color: "yellow" });
+    graph2.addNode("4", { label: "Antwone Prime", x: 3, y: 4, size: 10, color: "black" });
+    graph2.addNode("5", { label: "Antwone 4", x: 5, y: 6, size: 20, color: "orange" });
+    graph2.addNode("6", { label: "Antwone 5", x: 2, y: 8, size: 10, color: "purple" });
+    graph2.addNode("7", { label: "Antwone 6", x: 4, y: 7, size: 20, color: "green" });
+    graph2.addEdge("1", "4", { size: 5, color: "black" });
+    graph2.addEdge("2", "4", { size: 5, color: "black" });
+    graph2.addEdge("3", "4", { size: 5, color: "black" });
+    graph2.addEdge("5", "4", { size: 5, color: "black" });
+    graph2.addEdge("6", "4", { size: 5, color: "black" });
+    graph2.addEdge("7", "4", { size: 5, color: "black" });
 
     // Instantiate sigma.js and render the graph
-    const sigmaInstance = new Sigma(graph, document.getElementById("container"));
+    var sigmaInstance = new Sigma(graph2, document.getElementById("container"));
 </script>

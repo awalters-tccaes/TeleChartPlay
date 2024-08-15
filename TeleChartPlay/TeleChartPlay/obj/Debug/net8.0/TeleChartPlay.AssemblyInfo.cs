@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeleChartPlay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+501a3f65991f2371bf350a22206878a627bb4fe6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a006312edc976d14460e109fba3211df0b5bc454")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeleChartPlay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeleChartPlay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

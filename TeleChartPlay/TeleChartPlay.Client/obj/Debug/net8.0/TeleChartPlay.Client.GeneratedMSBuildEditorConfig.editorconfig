@@ -22,12 +22,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\workspace\TeleChartPlay\TeleChartPlay\TeleChartPlay.Client
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/workspace/TeleChartPlay/TeleChartPlay/TeleChartPlay.Client/Pages/D3.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRDMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/workspace/TeleChartPlay/TeleChartPlay/TeleChartPlay.Client/Pages/Gojs.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29qcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/workspace/TeleChartPlay/TeleChartPlay/TeleChartPlay.Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/workspace/TeleChartPlay/TeleChartPlay/TeleChartPlay.Client/Pages/Plotly.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxvdGx5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/workspace/TeleChartPlay/TeleChartPlay/TeleChartPlay.Client/Pages/Sigma.razor]
